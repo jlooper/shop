@@ -36,11 +36,11 @@
   // Handle clicks on each button.
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
-      var x = document.getElementById("mobile-menu");
-      if (x.style.display === "none") {
+      const x = document.getElementById("mobile-menu");
+      if (x?.style?.display === "none") {
         x.style.display = "block";
       } else {
-        x.style.display = "none";
+        x!.style.display = "none";
       }
     });
   });
